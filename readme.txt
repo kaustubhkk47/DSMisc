@@ -7,6 +7,11 @@ source projectname/bin/activate
 ---Install dependencies
 pip install -r requirements.txt
 
+--- Install jupyterlab extensions
+jupyter labextension install @jupyterlab/toc
+jupyter labextension install @krassowski/jupyterlab_go_to_definition
+
+
 ---Run jupyter and check path of python executable in notebook
 import sys
 sys.executable
